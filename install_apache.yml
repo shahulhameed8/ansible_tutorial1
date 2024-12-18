@@ -18,7 +18,7 @@
       name: libapache2-mod-php 
       state: latest
 
-  - name: add neovim and vim
+  - name: add neovim and vim and neofetch
     apt:
       name: 
         - neovim
