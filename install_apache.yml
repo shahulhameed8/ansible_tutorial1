@@ -17,3 +17,13 @@
     apt:
       name: libapache2-mod-php 
       state: latest
+
+  - name: add neovim and vim
+    apt:
+      name: 
+        - neovim
+        - vim
+        - neofetch
+      state: latest
+    when: ansible_distribution == "Ubuntu"
+
