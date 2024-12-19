@@ -5,6 +5,7 @@
   pre_tasks:
 
   - name: install updates (Ubuntu)
+    tags: always
     apt:
       upgrade: dist
       update_cache: yes
@@ -29,6 +30,7 @@
       state: latest
 
   - name: add neovim and vim and neofetch
+    tags: neovim,vim,neofetch
     apt:
       name: 
         - neovim
@@ -42,6 +44,7 @@
   tasks:
 
   - name: install mariadb packahe (Ubuntu)
+    tags: db,mariadb,ubuntu
     apt:
       name: mariadb-server
       state: latest
@@ -52,6 +55,7 @@
   tasks:
 
     - name: install samba package
+      tags: samba
       package:
         name: samba
         state: latest
